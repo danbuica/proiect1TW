@@ -110,6 +110,10 @@ nav{
   height: 120px;
 }
 
+.subtitle{
+  font-size: 41px;
+}
+
 .about-us-content{
   font-size: 20px;
 }
@@ -162,6 +166,7 @@ nav{
   grid-template-columns: 30% 30% 30%;
   grid-gap: 20px;
   color: #444;
+  margin-left:100px;
 }
 
 .box {
@@ -182,3 +187,20 @@ footer p{
   float: right;
   margin-right: 40px;
 }
+
+@media screen and (max-width:1279px) and (min-width:768px) {
+  .wrapper{
+    grid-template-columns: 50% 50%;
+    margin-left: 0;
+  }
+}​
+
+@media screen and (max-width:768px) {
+  .wrapper{
+    display: none !important;
+  }
+
+  body{
+    display: none;
+  }
+}​
